@@ -1,0 +1,50 @@
+.title__phimhot {
+    width: 100%;
+    margin: 3% auto 4%;
+}
+.title {
+    width: 94%;
+    margin: 20px auto 5px;
+    color: rgb(246, 246, 245);
+    justify-content: center;
+    align-items: center;
+}
+.mess {
+    margin-left: 100px;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+.title h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.title__phimhot hr {
+    background-color: orange;
+    height: 1.5px;
+    width: 90%;
+    margin: 0;
+    margin-left:5% ;
+    
+}
+.phimhot__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 84vw; 
+    margin: 20px auto; 
+}
+.movie-item {
+    background-color: #dad9d9e1;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.movie-item:hover {
+    transform: scale(1.05); 
+}
+
+.phimhot .info__btn {
+    margin: 30% auto 0 ;
+}
