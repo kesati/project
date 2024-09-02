@@ -32,7 +32,7 @@ dots.forEach ((dot,index) => {
     }
 })
 
-// let refreshSlide = setInterval (()=>{next.onclick()},4000);
+let refreshSlide = setInterval (()=>{next.onclick()},4000);
 
 function changeSlide (){
     let checkLeft = item[view].offsetLeft;
@@ -41,8 +41,8 @@ function changeSlide (){
     let active = document.querySelector('.carousel__dots li.active');
     active.classList.remove('active');
     dots[view].className = 'active';
-    // clearInterval (refreshSlide);
-    // refreshSlide = setInterval (()=>{next.onclick()},4000);
+    clearInterval (refreshSlide);
+    refreshSlide = setInterval (()=>{next.onclick()},4000);
 
 }
 
