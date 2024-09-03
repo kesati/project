@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Hot</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="phimhot.css">
+    <link rel="stylesheet" href="datve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Phần head thừa kế từ trang chủ -->
+    <div class="head flex">
+        <a href="project.html"><img class="head__left__logo" src="img/logo.png" alt="logo"></a>
+        <div class="head__right">
+            <div class="head__right__upper flex">
+                <div class="upper__orders1 flex">
+                    <a href="khophim.html"><img src="img/dat-ve-ngay.png" alt=""></a>
+                </div>
+                <div class="upper__input flex">
+                    <input class="searchInput" type="text" placeholder="Tìm phim...">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </div>
+                <button class="upper__account"><i class="fa-regular fa-circle-user"></i></button>
+                <p id="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đặt vé ngay<br>Phim hay trong tầm tay!</p>
+                <div class="upper__language">
+                    <select class="language">
+                        <option value="vi">VN</option>
+                        <option value="en">ENG</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="head__right__lower ">
+                <nav class="lower__list flex">
+                    <a href="project.html">Trang chủ</a>
+                    <a href="phimhot.html">Phim hot</a>
+                    <a href="phimsapchieu.html">Phim sắp chiếu</a>
+                    <a href="#">Ưu đãi-Sự kiện</a>
+                    <a href="#">Thành viên</a>
+                    <a href="#">Giải trí</a>
+                    <a href="#">Giới thiệu</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- BANNER POSSTER -->
+    <div class="general__order">
+        <div class="general__space">
+            <div class="wrap__content">
+                <div class="flex">
+                    <div class="space__poster">
+                        <div class="poster__img">
+                            <img src="img/movie28.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="space__detail">
+                        <div class="detail__content">
+                            <div class="order__movie">
+                                <div class="name__movie">
+                                    <h1 class="title__name">TÊN PHIM</h1>
+                                </div>
+                                <div class="genre__movie flex"><i class="fa-solid fa-tags"></i>&nbsp;<div
+                                        class="text__genre">Hài, Tâm Lý</div>
+                                </div>
+                                <div class="time__movie flex"><i class="fa-regular fa-clock"></i>&nbsp;<div
+                                        class="text__time">112'</div>
+                                </div>
+                                <div class="country__movie flex"><i class="fa-solid fa-earth-asia"></i>&nbsp;<div
+                                        class="text__country">Việt Nam</div>
+                                </div>
+                                <div class="trans__movie flex"><i class="fa-regular fa-closed-captioning"></i>&nbsp;<div
+                                        class="text__trans">Lồngtiếng</div>
+                                </div>
+                            </div>
+                            <div class="descrip__movie">
+                                <h2>MÔ TẢ</h2>
+                                <p>Đạo diễn: Chưa rõ</p>
+                                <p>Diễn viên: Chưa rõ</p>
+                                <p>Ngày khỏi chiếu: Đang cập nhật</p>
+                            </div>
+                            <div class="content__movie">
+                                <h2>NỘI DUNG PHIM</h2>
+                                <p>Đang cập nhật...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHỌN NGÀY XEM PHIM -->
+    <div class="showtime">
+        <div class="lichchieu">
+            <h1 class="title__name">LỊCH CHIẾU<h1>
+        </div>
+        <div class="week flex">
+            <div class="space__day">
+                <div class="day">
+                    <p class="so">02/09</p>
+                    <p>Thứ Hai</p>
+                </div>
+            </div>
+            <div class="space__day">
+                <div class="day">
+                    <p class="so">03/09</p>
+                    <p>Thứ Ba</p>
+                </div>
+            </div>
+            <div class="space__day">
+                <div class="day">
+                    <p class="so">04/09</p>
+                    <p>Thứ Tư</p>
+                </div>
+            </div>
+            <div class="space__day">
+                <div class="day">
+                    <p class="so">05/09</p>
+                    <p>Thứ Năm</p>
+                </div>
+            </div>
+            <div class="space__day">
+                <div class="day">
+                    <p class="so">06/09</p>
+                    <p>Thứ Sáu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- DANH SÁCH RẠP PHIM -->
+    <div class="theater__list">
+        <div class="title__theater flex">
+            <div class="space__title">
+                <div>
+                    <h1 class="title__name">DANH SÁCH RẠP</h1>
+                </div>
+            </div>
+            <div class="space__pro">
+                <div class="pro__theater flex">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select>
+                        <option>Hồ Chí Minh</option>
+                        <option>Đà Lạt</option>
+                        <option>Bình Dương</option>
+                        <option>Tiền Giang </option>
+                        <option>Huế</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- CHỌN RẠP PHIM -->
+        <div>
+            <div class="name__theaters">
+                <div class="space__theater">
+                    <div class="content__theater">
+                        <div class="space__name flex">
+                            <div class="name__theater">Cinema Mùa Thu</div>
+                            <div class="btn__theater"><button class="arrow__down"><i
+                                        class="fa-solid fa-angles-down"></i></button></div>
+                        </div>
+                        <div class="detail__theater">
+                            <div class="address__theater">
+                                <div class="address__detail">271 Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, Thành Phố
+                                    Hồ Chí Minh</div>
+                            </div>
+                            <div class="timekind__theater">
+                                <div class="kind__theater">Standard</div>
+                                <div class="time__space flex">
+                                    <div class="time__detail">11:00</div>
+                                    <div class="time__detail">11:45</div>
+                                    <div class="time__detail">12:15</div>
+                                    <div class="time__detail">13:30</div>
+                                    <div class="time__detail">14:00</div>
+                                    <div class="time__detail">14:45</div>
+                                    <div class="time__detail">15:00</div>
+                                    <div class="time__detail">15:30</div>
+                                    <div class="time__detail">16:15</div>
+                                    <div class="time__detail">17:20</div>
+                                    <div class="time__detail">18:10</div>
+                                    <div class="time__detail">19:00</div>
+                                    <div class="time__detail">20:15</div>
+                                    <div class="time__detail">21:00</div>
+                                    <div class="time__detail">22:00</div>
+                                    <div class="time__detail">22:50</div>
+                                    <div class="time__detail">23:20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="name__theaters">
+                <div class="space__theater">
+                    <div class="content__theater">
+                        <div class="space__name flex">
+                            <div class="name__theater">Cinema Phố</div>
+                            <div class="btn__theater"><button class="arrow__down"><i
+                                        class="fa-solid fa-angles-down"></i></button></div>
+                        </div>
+                        <div class="detail__theater">
+                            <div class="address__theater">
+                                <div class="address__detail">135 Hai Bà Trưng, Phường Bến Nghé ,Quận 1,Thành Phố Hồ Chí
+                                    Minh</div>
+                            </div>
+                            <div class="timekind__theater">
+                                <div class="kind__theater">Deluxe</div>
+                                <div class="time__space flex">
+                                    <div class="time__detail">16:45</div>
+                                    <div class="time__detail">17:30</div>
+                                    <div class="time__detail">18:15</div>
+                                    <div class="time__detail">18:30</div>
+                                    <div class="time__detail">19:10</div>
+                                    <div class="time__detail">20:00</div>
+                                    <div class="time__detail">21:20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHỌN LOẠI VÉ -->
+    <div class="choose__ticket">
+        <div class="space__title">
+            <div>
+                <h1 class="title__name ticket">CHỌN LOẠI VÉ</h1>
+            </div>
+        </div>
+        <div class="kind__tickets flex">
+            <div class="space__kind">
+                <div class="kind__ticket">
+                    <div class="space__text1">
+                        <div class="ticket__text1"></div>NGƯỜI LỚN
+                    </div>
+                    <div class="space__text2">
+                        <div class="ticket__text2"></div>ĐƠN
+                    </div>
+                    <div class="space__text3">
+                        <div class="ticket__text3"></div>85,000 VND
+                    </div>
+                    <div class="space__number">
+                        <div class="btn__ticket flex">
+                            <div class="ticket__number t1 flex">
+                                <div class="reduce__ticket btnticket"><i class="fa-solid fa-minus"></i></div>
+                                <div class="quantity__ticket">0</div>
+                                <div class="increa__ticket btnticket"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space__kind">
+                <div class="kind__ticket">
+                    <div class="space__text1">
+                        <div class="ticket__text1"></div>HSSV-NGƯỜI CAO TUỔI
+                    </div>
+                    <div class="space__text2">
+                        <div class="ticket__text2"></div>ĐƠN
+                    </div>
+                    <div class="space__text3">
+                        <div class="ticket__text3"></div>45,000 VND
+                    </div>
+                    <div class="space__number">
+                        <div class="btn__ticket flex">
+                            <div class="ticket__number t2 flex">
+                                <div class="reduce__ticket btnticket"><i class="fa-solid fa-minus"></i></div>
+                                <div class="quantity__ticket">0</div>
+                                <div class="increa__ticket btnticket"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space__kind">
+                <div class="kind__ticket">
+                    <div class="space__text1">
+                        <div class="ticket__text1"></div>NGƯỜI LỚN
+                    </div>
+                    <div class="space__text2">
+                        <div class="ticket__text2"></div>ĐÔI
+                    </div>
+                    <div class="space__text3">
+                        <div class="ticket__text3"></div>145,000 VND
+                    </div>
+                    <div class="space__number">
+                        <div class="btn__ticket flex">
+                            <div class="ticket__number flex">
+                                <div class="reduce__ticket"><i class="fa-solid fa-minus"></i></div>
+                                <div class="quantity__ticket">0</div>
+                                <div class="increa__ticket"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CHỌN GHẾ -->
+    <div class="choose__seat">
+        <div class="space__title">
+            <div>
+                <h1 class="title__name ticket">CHỌN GHẾ</h1>
+            </div>
+            <div class="space__sreen">
+                <div class="space__screen">
+                    <div class="screen"><img src="img/screen.png" alt="màn hình "></div>
+                </div>
+                <div class="manhinh">MÀN HÌNH</div>
+            </div>
+            <div class="select__seat">
+                <div class="space__seat">
+                    <div class="seating__chart flex">
+                        <div class="label__seat flex">
+                            <div class="label">A</div>
+                            <div class="label">B</div>
+                            <div class="label">C</div>
+                            <div class="label">D</div>
+                            <div class="label">E</div>
+                            <div class="label">F</div>
+                            <div class="label">G</div>
+                            <div class="label">H</div>
+                            <div class="label">J</div>
+                            <div class="label">K</div>
+                            <div class="label">L</div>
+                            <div class="label">M</div>
+                        </div>
+                        <div class="charts__seat">
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat">A02</div>
+                            <div class="chart__seat">A03</div>
+                            <div class="chart__seat">A04</div>
+                            <div class="chart__seat">A05</div>
+                            <div class="chart__seat">A06</div>
+                            <div class="chart__seat">A07</div>
+                            <div class="chart__seat">A08</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat">B01</div>
+                            <div class="chart__seat">B02</div>
+                            <div class="chart__seat">B03</div>
+                            <div class="chart__seat">B04</div>
+                            <div class="chart__seat">B05</div>
+                            <div class="chart__seat">B06</div>
+                            <div class="chart__seat">B07</div>
+                            <div class="chart__seat">B08</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat">C01</div>
+                            <div class="chart__seat">C02</div>
+                            <div class="chart__seat">C03</div>
+                            <div class="chart__seat">C04</div>
+                            <div class="chart__seat">C05</div>
+                            <div class="chart__seat">C06</div>
+                            <div class="chart__seat">C07</div>
+                            <div class="chart__seat">C08</div>
+                            <div class="chart__seat G4">C09</div>
+                            <div class="chart__seat G4">D01</div>
+                            <div class="chart__seat G4">D02</div>
+                            <div class="chart__seat G4">D03</div>
+                            <div class="chart__seat">D04</div>
+                            <div class="chart__seat">D05</div>
+                            <div class="chart__seat G4">D06</div>
+                            <div class="chart__seat G4">D07</div>
+                            <div class="chart__seat">D08</div>
+                            <div class="chart__seat">D09</div>
+                            <div class="chart__seat G4">E01</div>
+                            <div class="chart__seat">E02</div>
+                            <div class="chart__seat">E03</div>
+                            <div class="chart__seat G4">E04</div>
+                            <div class="chart__seat">E05</div>
+                            <div class="chart__seat G4">E06</div>
+                            <div class="chart__seat">E07</div>
+                            <div class="chart__seat G4">E08</div>
+                            <div class="chart__seat  G4">E09</div>
+                            <div class="chart__seat G4">F01</div>
+                            <div class="chart__seat G4">F02</div>
+                            <div class="chart__seat G4">F03</div>
+                            <div class="chart__seat G4">F04</div>
+                            <div class="chart__seat">F05</div>
+                            <div class="chart__seat G4">F06</div>
+                            <div class="chart__seat">F07</div>
+                            <div class="chart__seat">F08</div>
+                            <div class="chart__seat">F09</div>
+                            <div class="chart__seat G4">G01</div>
+                            <div class="chart__seat G4">G02</div>
+                            <div class="chart__seat G4">G03</div>
+                            <div class="chart__seat G4">G04</div>
+                            <div class="chart__seat">G05</div>
+                            <div class="chart__seat G4">G06</div>
+                            <div class="chart__seat">G07</div>
+                            <div class="chart__seat">G08</div>
+                            <div class="chart__seat">G09</div>
+                            <div class="chart__seat G4">H01</div>
+                            <div class="chart__seat G4">H02</div>
+                            <div class="chart__seat">H03</div>
+                            <div class="chart__seat">H04</div>
+                            <div class="chart__seat">H05</div>
+                            <div class="chart__seat G4">H06</div>
+                            <div class="chart__seat G4">H07</div>
+                            <div class="chart__seat G4">H08</div>
+                            <div class="chart__seat">H09</div>
+                            <div class="chart__seat">J01</div>
+                            <div class="chart__seat G4">J02</div>
+                            <div class="chart__seat G4">J03</div>
+                            <div class="chart__seat">J04</div>
+                            <div class="chart__seat G4">J05</div>
+                            <div class="chart__seat">J06</div>
+                            <div class="chart__seat">J07</div>
+                            <div class="chart__seat G4">J08</div>
+                            <div class="chart__seat">J09</div>
+                            <div class="chart__seat">K01</div>
+                            <div class="chart__seat G4">K02</div>
+                            <div class="chart__seat G4">K03</div>
+                            <div class="chart__seat G4">K04</div>
+                            <div class="chart__seat G4">K05</div>
+                            <div class="chart__seat">K06</div>
+                            <div class="chart__seat">K07</div>
+                            <div class="chart__seat">K08</div>
+                            <div class="chart__seat">K09</div>
+                            <div class="chart__seat G2">L01</div>
+                            <div class="chart__seat G2">L02</div>
+                            <div class="chart__seat">L03</div>
+                            <div class="chart__seat G4">L04</div>
+                            <div class="chart__seat G4">L05</div>
+                            <div class="chart__seat">L06</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat G2">L08</div>
+                            <div class="chart__seat G2">L09</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat G2  ">M02</div>
+                            <div class="chart__seat G2">M03</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat G2">M05</div>
+                            <div class="chart__seat G2">M06</div>
+                            <div class="chart__seat G5"></div>
+                            <div class="chart__seat G2">M08</div>
+                            <div class="chart__seat G2">M09</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comments">
+                <div class="space__comment">
+                    <div class="comment__detail flex">
+                        <div class="space__comment1">
+                            <div class="comment flex">
+                                <div class="seat G1"></div> <span>GHẾ THƯỜNG</span>
+                            </div>
+                        </div>
+                        <div class="space__comment2">
+                            <div class="comment flex">
+                                <div class="seat G7"></div>
+                                <div class="seat G7"></div><span>GHẾ ĐÔI</span>
+                            </div>
+                        </div>
+                        <div class="space__comment3">
+                            <div class="comment flex">
+                                <div class="seat G3"></div><span>GHẾ CHỌN</span>
+                            </div>
+                        </div>
+                        <div class="space__comment4">
+                            <div class="comment flex   ">
+                                <div class="seat G4"></div> <span>GHẾ ĐÃ ĐẶT</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="pay__money">
+        <div class="space__pay">
+            <div class="showtime__pay">
+                <div class="space__moviepay">
+                    <div class="moviepay">TÊN PHIM</div>
+                </div>
+                <div class="space__theaterpay">
+                    <div class="theaterpay">Cinema Mùa Thu</div>
+                </div>
+                <div class="space__timepay flex">
+                    <div class="timepaytitle">SUẤT CHIẾU:&nbsp;</div>
+                    <div class="timpay">21:47</div>
+                </div>
+            </div>
+            <hr>
+            <div class="detailpay ">
+                <div class="space__titlepay">
+                    <div class="titlepay">CHI TIẾT</div>
+                </div>
+                <div class="space__ticketpay flex">
+                    <div class="name__ticketpay">VÉ ĐƠN NGƯỜI LỚN:&nbsp;</div>
+                    <div class="number__ticketpay">0</div>
+                </div>
+                <div class="space__ticketpay flex">
+                    <div class="name__ticketpay">VÉ ĐƠN HSSV-NGƯỜI CAO TUỔI:&nbsp;</div>
+                    <div class="number__ticketpay v2">0</div>
+                </div>
+                <div class="space__ticketpay flex">
+                    <div class="name__ticketpay">VÉ ĐÔI NGƯỜI LỚN: 0</div>
+                </div>
+                <div class="space__moneypay flex">
+                    <div class="moneypay">TỔNG TIỀN:&nbsp;</div>
+                    <div class="numberpay"></div>
+                    <div class="vnd">&nbsp;VND</div>
+                </div>
+            </div>
+            <div class="xacnhan">
+                <button class="payment-btn">Thanh toán</button>
+                <div class="notification hidden">
+                    <p>Chúc mừng bạn!</p>
+                    <p>Đặt vé thành công!</p>
+                    <button class="ok-btn">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="datve.js"></script>
+    <script src="head.js"></script>
+
+    <body>
+
+</html>

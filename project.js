@@ -1,5 +1,5 @@
 
-                // BANNER QUẢNG CÁO 
+                   // BANNER QUẢNG CÁO 
 let slide = document.querySelector('.carousel__slide');
 let item = document.querySelectorAll('.slide__item');    
 let next = document.querySelector('.next');
