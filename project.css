@@ -135,8 +135,8 @@ body {
 .user {
     display: none;
     position: fixed;
-    top: 30%;
-    left: 40%;
+    top: 25%;
+    left: 37%;
     width: 400px;
     height: 330px;
     justify-content: center;
