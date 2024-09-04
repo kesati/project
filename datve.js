@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (dataMovieString){
         let dataString = JSON.parse(dataMovieString);
+        console.log(dataMovieString);
         document.querySelector('.poster__img img').setAttribute('src', dataString.src);
         document.querySelector('.name__movie h1').textContent = dataString.name;
         document.querySelector('.genre__movie .text__genre').textContent =  dataString.genre;

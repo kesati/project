@@ -1,0 +1,119 @@
+/* LĂN LÊN TRÊN */
+    #backtotop{
+        width: 3rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        height: 3rem;    
+        border-radius: 50%;
+        position: fixed;
+        right: 3rem;
+        bottom: 3rem;
+        display: none;
+        cursor: pointer;
+        z-index: 90;
+    }
+    #backtotop>i{
+        color: black;
+    }
+    .arrow{
+        position: absolute;
+        right: 1.2rem;
+        bottom: 1.1rem;
+    }
+
+    /* BEELLL */
+    .bell{
+        position:fixed;
+        background-color: #F29438;
+        bottom: 5rem;
+        left: 2rem;
+        width: 3rem;
+        height: 3rem;
+        z-index: 100;
+        border-radius: 100%;
+       display: block;
+    }
+    .bell1{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color:#e6b98c;
+    display: block;
+    pointer-events: none;
+    animation: 2s bell-ring linear infinite;
+    }
+    .bell>i{
+        font-size: 1.5rem;
+        margin-top: 0.7rem;
+        margin-left: 0.8rem;
+    }
+    .bell-vong{
+        position: fixed;
+        width: 200%;
+        border: 1px solid #F29438;
+        bottom: 5rem;
+        left: 2rem;
+        width: 3rem;
+        height: 3rem;
+        z-index: 100;
+        border-radius: 100%;
+        animation: 1s bell-vong linear infinite;
+    }
+    @keyframes bell-vong{
+        from{
+            transform:scale(1);
+        }
+        to{
+            transform: scale(1.3);
+        }
+    }
+    @keyframes bell-ring {
+        0%{
+            opacity: 0.4;
+            transform:scale(1.9);
+        }
+        50%{
+            opacity: 0.4;
+            transform: scale(1.5);
+        }
+        100%{
+            opacity: 0.4;
+            transform: scale(1.9);
+        }
+    }
+/* MENU */
+.menucodinh{
+    /* background-color: rgb(185, 11, 127); */
+    background: linear-gradient(90deg, #620562, #a807d0);
+    z-index: 1000;
+    position: fixed;
+    left :-2px;
+    width: 100%;
+    display: none;
+    border-bottom: 1px solid #F29438;
+}
+.menucodinh>div{
+   width: 90%;
+    margin: 0 auto;
+}
+.menu__add{
+    justify-content: space-between;
+    color: white;
+}
+.menu__add>li{
+  
+    list-style: none;
+}
+.menu__add>li:hover{
+    background-color: rgb(120, 21, 85);
+}
+.menu__add >li>a{
+    line-height: 3rem;
+    margin: auto 0;
+    padding: 0.9rem;
+    width: 100%;
+    margin: 5rem 0rem;
+    text-decoration: none;
+}

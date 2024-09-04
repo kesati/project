@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const user = document.querySelector('.user');
     
@@ -18,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.user__register').style.display = 'block';
         });
     });
+    
     document.querySelectorAll('.switclogin').forEach(function(element) {
         element.addEventListener('click', function(event) {
             event.preventDefault();
@@ -26,22 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.user__register').style.display = 'none';
         });
     });
+
+    document.querySelector('.search').addEventListener('click', redirectToSearch);
     
+    document.querySelector('.searchInput').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            redirectToSearch();
+        }
+    });
 
-document.querySelector('.search').addEventListener('click', redirectToSearch);
-document.querySelector('.searchInput').addEventListener('keydown', function(event){
-    if (event.key === 'Enter') {
-        redirectToSearch ();
-    }
-});
-function redirectToSearch () {
-    let input = document.querySelector('.searchInput').value.trim();
+    function redirectToSearch() {
+        let input = document.querySelector('.searchInput').value.trim();
 
-    if (input.length > 0){
-        window.location.href = 'khophim.html?query=' + encodeURIComponent(input);
+        if (input.length > 0) {
+            window.location.href = 'khophim.html?query=' + encodeURIComponent(input);
+        }
     }
-}
-document.addEventListener('DOMContentLoaded', function() {
+
     let listMovie = document.querySelectorAll('.movie1__space');
     listMovie.forEach(itemMovie => {
         itemMovie.addEventListener('click', () => {
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let time = itemMovie.querySelector('.inner .time').textContent.trim();
             let country = itemMovie.querySelector('.inner .country').textContent.trim();
             let trans = itemMovie.querySelector('.inner .trans').textContent.trim();
-            let ojectMovie = {
+            let objectMovie = {
                 src: imgSrc,
                 name: name,
                 genre: genre,
@@ -59,9 +60,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 country: country,
                 trans: trans
             };
-            let dataMovie = JSON.stringify(ojectMovie);
+            let dataMovie = JSON.stringify(objectMovie);
             localStorage.setItem('selectedMovie', dataMovie);
         });
     });
 });
-});
+
+
