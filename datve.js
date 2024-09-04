@@ -35,6 +35,7 @@ document.querySelectorAll('.btnticket').forEach(button => {
     });
 });
 
+
 function changeValue(quantity, di) {
     let quantityValue = parseInt(quantity.textContent); 
     if (di === 'reduce__ticket btnticket') {
@@ -70,7 +71,16 @@ document.querySelectorAll('.chart__seat').forEach(function(seat) {
     }
 });
 });
-
+let times = document.querySelectorAll('.time__detail');
+times.forEach(function (time) {
+    time.addEventListener('click', () => {
+        times.forEach(function(time){
+            time.classList.remove('timeactive')
+        });
+        document.querySelector('.timpay').textContent= time.textContent;
+        time.classList.add('timeactive');
+    });
+});
 
 
 document.querySelector('.payment-btn').addEventListener('click', function() {

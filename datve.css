@@ -198,6 +198,10 @@
     margin: 5px ;
     cursor: pointer;
 }
+.timeactive {
+    border: 1px solid rgb(226, 245, 11);
+    color: rgb(226, 245, 11);
+}
 /* CHỌN LOẠI VÉ */
 .choose__ticket {
     width: 80vw;
