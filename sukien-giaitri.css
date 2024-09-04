@@ -1,0 +1,33 @@
+.enter {
+    width: 80vw;
+    margin: 70px auto;
+}
+.title__name{
+    color: whitesmoke;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 70px;
+}
+.space__enter {
+    width: 100%;
+    margin: 30px auto;
+}
+.img__enter {
+    margin: 5px auto;
+}
+.img__enter img {
+    width: 70vw;
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    transition: box-shadow 0.3s ease; 
+}
+.img__enter img:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.7); 
+}
+.footer{
+    margin-top: 10%;
+}
+.footer.thanhvien {
+    margin-top: 25%;
+}

@@ -49,7 +49,7 @@ function changeValue(quantity, di) {
     count = a + b;
     document.querySelector('.number__ticketpay').textContent =a;
     document.querySelector('.number__ticketpay.v2').textContent =b;
-    document.querySelector('.numberpay').textContent = a*85000+b*45000;
+    document.querySelector('.numberpay').textContent = a*85+b*45;
 }
 
 let i = 0;

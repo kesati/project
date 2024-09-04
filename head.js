@@ -1,3 +1,33 @@
+
+document.addEventListener('DOMContentLoaded', function() {
+    const user = document.querySelector('.user');
+    
+    document.querySelector('.upper__account').addEventListener('click', function() {
+        user.style.display = 'block';
+    });
+    
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        user.style.display = 'none';
+    });
+    
+    document.querySelectorAll('.switchregister').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            user.style.display = 'block';
+            document.querySelector('.user__login').style.display = 'none';
+            document.querySelector('.user__register').style.display = 'block';
+        });
+    });
+    document.querySelectorAll('.switclogin').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            event.preventDefault();
+            user.style.display = 'block';
+            document.querySelector('.user__login').style.display = 'block';
+            document.querySelector('.user__register').style.display = 'none';
+        });
+    });
+    
+
 document.querySelector('.search').addEventListener('click', redirectToSearch);
 document.querySelector('.searchInput').addEventListener('keydown', function(event){
     if (event.key === 'Enter') {
@@ -33,4 +63,5 @@ document.addEventListener('DOMContentLoaded', function() {
             localStorage.setItem('selectedMovie', dataMovie);
         });
     });
+});
 });
