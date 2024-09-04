@@ -86,7 +86,7 @@
 /* MENU */
 .menucodinh{
     /* background-color: rgb(185, 11, 127); */
-    background: linear-gradient(90deg, #620562, #a807d0);
+    background: linear-gradient(90deg, #772088, #ab6304);
     z-index: 1000;
     position: fixed;
     left :-2px;
@@ -100,7 +100,7 @@
 }
 .menu__add{
     justify-content: space-between;
-    color: white;
+  
 }
 .menu__add>li{
   
@@ -111,6 +111,7 @@
 }
 .menu__add >li>a{
     line-height: 3rem;
+    color: white;
     margin: auto 0;
     padding: 0.9rem;
     width: 100%;

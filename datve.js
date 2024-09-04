@@ -41,7 +41,8 @@ function changeValue(quantity, di) {
         if (quantityValue > 0) {
             quantity.textContent = quantityValue - 1; 
         }
-    } else {
+    } else if (quantityValue < 10){
+
         quantity.textContent = quantityValue + 1; 
     }
   
