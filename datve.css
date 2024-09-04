@@ -11,7 +11,7 @@
 }
 .general__space {
     width: 70vw;
-    margin: 0 auto;
+    margin: 3% auto 7%;
 }
 .wrap__content {
     width: 100%;
@@ -74,6 +74,7 @@
     max-width: 100%;
     margin: 5% auto;
     text-align: center;
+
 }
 .week {
     width: 100%;

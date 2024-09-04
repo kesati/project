@@ -89,6 +89,7 @@
     background: linear-gradient(90deg, #772088, #ab6304);
     z-index: 1000;
     position: fixed;
+    top: -2px;
     left :-2px;
     width: 100%;
     display: none;
