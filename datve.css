@@ -11,7 +11,7 @@
 }
 .general__space {
     width: 70vw;
-    margin: 3% auto 7%;
+    margin: 3% auto 12%;
 }
 .wrap__content {
     width: 100%;
@@ -378,6 +378,10 @@
 .showtime__pay >*{
     margin: 10px auto;
     
+}
+.hr__pay hr {
+    height: 0;
+    border: 2px solid black;
 }
 .space__pay {
     font-size: 1.3rem;
