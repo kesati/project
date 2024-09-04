@@ -18,13 +18,13 @@
     margin: 0;
     font-size: 2rem;
 }
-.title__phimhot hr {
+.phimhot__hr {
     background-color: orange;
-    height: 1.5px;
+    height: 3px; 
     width: 90%;
     margin: 0;
-    margin-left:5% ;
-    
+    margin-left: 5%;
+
 }
 .phimhot__content {
     display: grid;
