@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
+
     document.querySelector('.search').addEventListener('click', redirectToSearch);
     
     document.querySelector('.searchInput').addEventListener('keydown', function(event) {
@@ -42,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'khophim.html?query=' + encodeURIComponent(input);
         }
     }
+
+
+    
 
     let listMovie = document.querySelectorAll('.movie1__space');
     listMovie.forEach(itemMovie => {
